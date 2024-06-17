@@ -103,9 +103,9 @@ void setup() {
  *
  * Please note: If the size of the filter is 0, the filter is not used.
  */
-  bme.setIIRFilterSize(BME680_FILTER_SIZE_7);
+  bme.setIIRFilterSize(BME680_FILTER_SIZE_3);
 
-  bme.setGasHeater(200, 0);  // 320*C for 150 ms
+  bme.setGasHeater(200, 0);  // Turn off gas heater(Gas heater is used to measure VOCs density)
   //Set time to send data to Blynk Cloud
   timer.setInterval(5000L, bmeSend);
   timer.setInterval(10000L, dustSend);
@@ -197,11 +197,11 @@ void dustDisplay() {
   display.print("Chat luong:");
   // Evaluate indoor air quality from AQI Index Table
   if (dustAvg <= 35) { display.print("Tot"); }
-  if (dustAvg >= 36 && dustAvg <= 75) { display.print("Trung binh"); }
-  if (dustAvg >= 76 && dustAvg <= 115) { display.print("Kem"); }
-  if (dustAvg >= 116 && dustAvg <= 150) { display.print("Xau"); }
-  if (dustAvg >= 151 && dustAvg <= 250) { display.print("Rat xau"); }
-  if (dustAvg >= 251) { display.print("Nguy hai"); }
+  if (dustAvg > 35 && dustAvg <= 75) { display.print("Trung binh"); }
+  if (dustAvg > 75 && dustAvg <= 115) { display.print("Kem"); }
+  if (dustAvg > 115 && dustAvg <= 150) { display.print("Xau"); }
+  if (dustAvg > 150 && dustAvg <= 250) { display.print("Rat xau"); }
+  if (dustAvg > 250) { display.print("Nguy hai"); }
 }
 //Send Dust Density and air quality evaluation to Blynk Cloud
 void dustSend() {
