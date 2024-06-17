@@ -1,5 +1,6 @@
 # iqam - Indoor Air Quality Monitor
 <p align="center"><img src="/images/iaqm.jpg" width="200px"/></p>
+
   # Introduction #
   
   <p align="center"><img src="/images/iaqm thumbnail.jpg" /></p>
