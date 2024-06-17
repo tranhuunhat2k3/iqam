@@ -1,6 +1,5 @@
 # iqam
-/***********************************************************
- * --------------Indoor Air Quality Monitor-----------------
+  --------------Indoor Air Quality Monitor-----------------
  * # Introduction
  * -Microcontroller: ESP32
  * -This project read temperature, humidity, pressure (in addition, it also measures VOCs gas concentration)
@@ -10,7 +9,6 @@
  * -Use Blynk Cloud to send data and show on web dashboard and mobile app via firmware configuration.
  * # Configuration 
  * - In order to use this code for your project/device please change Blynk Firmware Configuration and Wifi credentials in the code. 
- *********************************************************/
 # Library
 Add the following library into your Arduino IDE library (by searching it on the left panel)
 1. Open Arduino IDE.
