@@ -1,5 +1,7 @@
 # iqam - Indoor Air Quality Monitor
+<p align="center"><img src="/images/iaqm.jpg" width="500px"/></p>
   # Introduction
+  <p align="center"><img src="/images/iaqm thumbnail.jpg" /></p>
  * -Microcontroller: ESP32
  * -This project read temperature, humidity, pressure (in addition, it also measures VOCs gas concentration)
  * from BME680 sensor and read dust density (PM2.5,PM10,...) from Sharp Gp2y1014 sensor.
@@ -28,3 +30,4 @@ Add the following library into your Arduino IDE library (by searching it on the 
 * Jumper wire
 * USB capble to flash 
 * PCB/breadboard/miniboard
+<p align="center"><img src="/images/schematic.jpg"/></p>
