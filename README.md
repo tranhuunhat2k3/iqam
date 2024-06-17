@@ -14,17 +14,17 @@ Add the following library into your Arduino IDE library (by searching it on the 
 2. Goto `Sketch` > `Include Library` > `Manage Libraries...`.
 3. Search `MyLibrary`.
 4. Choose `MyLibrary` and click `Install`.
-*Adafruit BME680 library by Adafruit
-*Adafruit GFX library by Adafruit
-*Adafruit SSD1306 by Adafruit
-*Blynk by Volodymyr Shymanskyy
+* Adafruit BME680 library by Adafruit
+* Adafruit GFX library by Adafruit
+* Adafruit SSD1306 by Adafruit
+* Blynk by Volodymyr Shymanskyy
 # Electronic components needed
-*ESP32 microcontroller
-*Oled 0.96 inch
-*BME680 temperature, humidity, pressure, VOCs,... sensor
-*Sharp GP2Y1014AUF dust sensor
-*150 ohm resistor
-*220uF Capacitor
-*Jumper wire
-*USB capble to flash 
-*PCB/breadboard/miniboard
+* ESP32 microcontroller
+* Oled 0.96 inch
+* BME680 temperature, humidity, pressure, VOCs,... sensor
+* Sharp GP2Y1014AUF dust sensor
+* 150 ohm resistor
+* 220uF Capacitor
+* Jumper wire
+* USB capble to flash 
+* PCB/breadboard/miniboard
